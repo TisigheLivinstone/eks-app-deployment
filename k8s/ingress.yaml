@@ -12,7 +12,7 @@ metadata:
     # HTTPS only — redirect HTTP to HTTPS handled at ALB level
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     # Replace with your ACM certificate ARN
-    alb.ingress.kubernetes.io/certificate-arn: YOUR_ACM_CERT_ARN
+    alb.ingress.kubernetes.io/certificate-arn: api.livinstone.dev
     # ALB checks this path before routing traffic to a pod
     alb.ingress.kubernetes.io/healthcheck-path: /healthz/ready
     alb.ingress.kubernetes.io/healthcheck-interval-seconds: "15"
